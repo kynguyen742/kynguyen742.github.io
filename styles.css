@@ -12,6 +12,24 @@ h1 {
     margin: 10px; 
     background: saddlebrown; 
 } 
+.assign1 { 
+    display: flex; 
+    padding: 10px; 
+    margin: 10px; 
+    background: saddlebrown; 
+}
+.assign2 { 
+    display: flex; 
+    padding: 10px; 
+    margin: 10px; 
+    background: saddlebrown; 
+}
+.assign3 { 
+    display: flex; 
+    padding: 10px; 
+    margin: 10px; 
+    background: saddlebrown; 
+}
 .assign img { 
     width: 200px; 
     padding: 10px; 
