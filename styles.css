@@ -1,47 +1,78 @@
-body { 
-    background: aqua; 
-    font-family: Arial, Helvetica, sans-serif; 
+/* Resetting defaults and setting up box-sizing */
+* {
+    box-sizing: border-box;
+    margin: 0;
+    padding: 0;
+}
+
+/* Body styles */
+body {
+    background-color: rgba(0, 0, 0, 0.496);
+    font-family: Arial, Helvetica, sans-serif;
     display: flex;
     flex-wrap: wrap;
-} 
-h1 { 
-    color: black; 
-    text-align: center; 
+    justify-content: center; /* Align content in the center */
+    align-items: flex-start; /* Align items to the top */
+    padding: 20px; /* Add some padding to the body */
+}
+
+/* Header styles */
+h1 {
+    color: black;
+    text-align: center;
     width: 100%;
-    display: block;
 }
-h1:hover {    
-    color: hotpink;    
-    text-align: center;    
-    width: 100%;    
-    display: block; 
+
+h1:hover {
+    color: rgb(6, 77, 171);
 }
-.assign { 
-    width: 20%;
-    display: block;
-    box-shadow: 8px 8px antiquewhite; 
-    padding: 10px; 
-    margin: 10px; 
-    background: saddlebrown; 
+
+/* Assignment card styles */
+.assign {
+    width: calc(25% - 20px); /* Adjusting width considering margins */
+    display: flex;
+    flex-direction: column; /* Stack content vertically */
+    align-items: center; /* Center items horizontally */
+    box-shadow: 8px 8px rgb(255, 255, 255);
+    padding: 20px;
+    margin: 10px;
+    background: rgba(90, 82, 76, 0.773);
     border-radius: 20px;
-} 
-
-.assign img { 
-    width: 200px; 
-    padding: 10px; 
-    border: 2px solid midnightblue; 
-}
-.assign img:hover {    
-    width: 200px;    
-    margin: 10px;    
-    border: 2px dashed rgb(0, 60, 255); 
-}
-a {    
-    text-decoration: none; /* remove underlining on anchor tags */    
-    color: midnightblue; /* pick the color you want */ 
-}
-a:hover {    
-    text-decoration: none; /* remove underlining on anchor tags */    
-    color: salmon; /* pick the color you want */ 
 }
 
+.assign img {
+    width: 100%; /* Make the image responsive to its container */
+    max-width: 200px; /* Limit the image width */
+    border: 2px solid midnightblue;
+    border-radius: 10px;
+    transition: border-color 0.3s ease; /* Smooth transition on border change */
+}
+
+.assign:hover img {
+    border-color: rgb(0, 60, 255);
+}
+
+/* Anchor tag styles */
+a:hover {
+    text-decoration: none;
+    color: rgb(255, 255, 255);
+}
+h2{
+    text-decoration: none;
+    color: rgb(255, 255, 255);
+}
+h2:hover{
+    color:rgb(49, 0, 246)
+}
+p{
+    text-decoration: none;
+    color: rgb(255, 255, 255);
+}
+@media screen and (max-width: 768px) {
+    .assign {
+        width: calc(100% - 20px); 
+    }
+    body {
+        padding: 5px; 
+    }
+}
