@@ -75,4 +75,7 @@ p{
     body {
         padding: 5px; 
     }
+    h1 {
+        font-size: 24px; /* Decrease header font size for mobile */
+    }
 }
